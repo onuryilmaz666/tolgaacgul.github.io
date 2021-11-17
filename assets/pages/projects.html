@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body style="background-color: white;">
+    <h1 style="text-align: center;">Some Projects</h1>
+
+    <div class="card" id="idWorkerScore">
+        <h2>Worker Score</h2><hr>
+        <p>İşçinin kaydı ve maaş bilgilerinin ve alacağı tutarın yer aldığı bir masaüstü uygulaması.</p>
+    </div>
+
+    <div class="card" id="idSamplingTheory">
+        <h2>Sampling Theory</h2><hr>
+        <p>Random kitle içerisinden örneklem uzayı ve bazı tahminler üzerine durulmuştur</p>
+    </div>
+    <div class="card" id="gnyarc">
+        <h2>Gönye Aracı</h2><hr>
+        <h2>Basitçe hipotenüs hesaplaması üzerine çalışmaktadır</h2>
+    </div>
+    <div class="card" id="ymk">
+        <h2>Yamuk Hesabi</h2><hr>
+        <h2>Yamuk dörtgenin ortasındaki yatayın uzunluğunu bulma</h2>
+    </div>
+</body>
+
+
+<script>
+    document.querySelector("#idWorkerScore").onclick = function(){
+        window.open("https://github.com/tolgaacgul/Puantaj", "_blank");
+    }
+    document.querySelector("#idSamplingTheory").onclick = function(){
+        window.open("../projects/samplingtheory/index.html", "_blank");
+    }
+    document.querySelector("#gnyarc").onclick = function(){
+        window.open("../projects/hipotenus-araci/index.html", "_blank");
+    }
+    document.querySelector("#ymk").onclick = function(){
+        window.open("../projects/yamuk/index.html", "_blank");
+    }
+</script>
+</html>

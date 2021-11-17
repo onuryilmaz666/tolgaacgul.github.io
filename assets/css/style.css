@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(43, 43, 43);
+}
+body h1,h2,h3,h4,h5,h6,p{
+    color: black;
+    padding: 0 15px ;
+}
+/* -------------------------------------------- */
+/* Navigation Bar */
+.divNavBar{
+    margin: 0px;
+}
+.divNavBar ul{
+    margin: 0px;
+    list-style-type: none;
+    background-color: black;
+    overflow: auto;
+}
+.divNavBar ul li{
+    float:left;
+}
+.divNavBar ul li a{
+    text-decoration: none;
+    padding: 20px 20px;
+    color: white;
+    display: block;
+    font-size: 19px;
+    text-align: center;
+}
+.divNavBar ul li a:hover{
+    background-color: rgb(204, 57, 57);
+}
+.divNavBar::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* -------------------------------------------- */
+/* Div Body */
+.divBody{
+    margin: 15px 25px;
+    overflow: hidden;
+}
+
+/* LEFT Side  */
+.divBody .leftSide{
+    border: none;
+    background-color: white;
+    float: left;
+    width: 22%;
+    padding: 3% 0;
+    border-radius: 5px;
+}
+.divBody .leftSide h1,h2,h3,h4,h5,h6,p{
+    text-align: center;
+}
+.divBody .leftSide .divImg{
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.divBody .leftSide .divImg img{
+    width: 100%;
+}
+
+/* MIDDLE Side */
+.divBody .middleSide{
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    width: 77%;
+    height: 1000px;
+    float: left;
+    margin: 0 0 0 1%;
+    padding: 1% 5%;
+    text-align: center;
+}
+.middleSide iframe{
+    border-radius: 5px;
+    border: none;
+}
+/* -------------------------------------------- */
+/* CARD View */
+.card{
+    background-color: rgb(203, 82, 82);
+    width: 30%;
+    overflow: hidden;
+    border-radius: 10px;
+    float: left;
+    margin: 1.66%;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.6);
+}
+.card h2{
+    color: rgb(255, 211, 211);
+}
+.card p{
+    color: white;
+}
+.card:hover{
+    background-color: rgb(204, 57, 57);
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+}
+
+/* CLEARFİX METHOD */
+/* .clearfix {
+    overflow: auto;
+  }   */
+.divBody::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* -------------------------------------------- */
+.divFooter{
+    padding: 0 30px 0 30px;
+    height: auto;
+    overflow: hidden;
+    background-color: black;
+}
+.divFooter .footerCard{
+    float: left;
+    width: 33.33%;
+}
+.footerCard a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footerCard h1{
+    text-align: center;
+    color: white;
+}
+.footerCard p{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+/* //////////////////////////////////// */
+@media only screen and (max-width: 1000px){
+    h1{
+        font-size: 1.3rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 700px){
+    h1{
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    .divBody .leftSide{
+        overflow: hidden;
+        width: 99%;
+        display: block;
+        margin: 10px 5px 10px 5px;
+        border-radius: 9px;
+    }
+    .divBody .leftSide .divImg{
+    width: 45%;
+    margin-top: 3%;
+    }
+    .divBody .middleSide{
+        overflow: auto;
+        width: 99%;
+        display: block;
+        margin: 10px 5px 10px 5px;
+        border-radius: 9px;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    h1{
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 0.9rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .divNavBar ul{
+        padding: 0px;
+        margin: 0px;
+    }
+    .divNavBar ul li a{
+        padding: 15px 6px;
+        margin: 0px;
+        font-size: 0.8rem;
+    }
+    .card{
+        width: 48%;
+        margin: 1%;
+    }
+    .divBody{
+        padding: 0px;
+        margin: 1%;
+    }
+    .divFooter .footerCard{
+        width: 100%;
+    }
+    .divBody{
+        display: hidden;
+    }
+}
