@@ -59,6 +59,8 @@
   .girdiAlani{
     text-align: center;
     margin-top: 25%;
+    position: sticky;
+    margin-bottom: 0px;
   }
   .girdiAlani div{
     margin: 20px 0px;
