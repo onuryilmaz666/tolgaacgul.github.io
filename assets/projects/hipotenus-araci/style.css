@@ -42,6 +42,7 @@
     border-right: 80px solid transparent; 
     border-bottom: 80px solid ; 
     border-left: 80px solid ; 
+    position: sticky;
   }
   .baslik{
     top: 0px;
@@ -91,6 +92,7 @@
     color: white;
     width: 100%;
     border: none;
+
   }
   .info a{
     color: aqua;
@@ -102,6 +104,8 @@
     border: none;
     border-radius: 3px;
     box-shadow: 2px 2px 3px black;
+    position: sticky;
+    margin-bottom: 0px;
   }
   #idOk:hover{
     background-color: rgb(163, 60, 60);
