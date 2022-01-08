@@ -11,9 +11,11 @@ idOk.addEventListener("click", ()=>{
 
   if(inputA.value && inputB.value && inputH.value && inputY.value){
 
-     let pay = (Number(inputA.value) + (Number(inputH.value) - Number(inputY.value))) * (Number(inputB.value))
-     let payda = (Number(inputA.value) + Number(inputH.value))
-     let sonuc = Number((pay)/(payda));
+     let pay = ((Number(inputB.value) - Number(inputA.value))) * (Number(inputY.value))
+    //  let payda = (Number(inputH.value) - Number(inputY.value))
+     let payda = (Number(inputH.value))
+     let z = Number((pay)/(payda));
+     let sonuc = z + Number(inputA.value);
      pX.innerText = sonuc
 
     pX.style.borderBottom = "3px solid red"
