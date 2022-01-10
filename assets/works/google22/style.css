@@ -37,22 +37,41 @@ header nav div a svg{
 
 main{
     text-align: center;
-    padding: 139px 0px;
+    padding: 139px 20px;
+
 }
 .search .search-bar{
-    margin: 20px 20px 12px 20px;
-}
-.search .search-bar input[type="search"]{
+    margin: 20px auto 12px auto;
     height: 50px;
-    /* 
-    bizden istenen
-    max-width: 480px;
-    border: none;
-    */
-    max-width: 580px;
-    width: 100%;
     border-radius: 24px;
     border: 1px solid black;
+    align-items: center;
+    display: flex;
+    max-width: 580px;
+}
+.search .search-bar div#keyboard-icon{
+    margin-left: 10px;
+}
+.search .search-bar svg{
+    width: 19px;
+    margin-left: 14px;
+    margin-right: 12px;
+}
+.search .search-bar div#mic-icon img{
+    width: 24px;
+    margin-left: 14px;
+    margin-right: 12px;
+}
+.search .search-bar input[type="search"]{
+    width: 480px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+}
+.search .search-bar input[type="search"]:focus{
+    border: none;
+    text-decoration: none;
 }
 input[type="button"]{
     margin: 0px 4px 30px 4px;
@@ -72,12 +91,32 @@ input[type="button"]{
 
 footer{
     background-color: #f2f2f2;
+    display: flex;
     position: fixed;
     height: 90px;
     width: 100%;
     bottom: 0px;
 }
+footer div{
+    position: fixed;
+    bottom: 10px;
+}
+footer div.left{
+    left: 15px;
+}
+footer div.right{
+    right: 15px;
+}
+footer div ul li{
+    list-style-type: none;
+    float: left;
+    padding: 10px;
 
+}
+footer div ul li a{
+    text-decoration: none;
+    
+}
 
 
 
