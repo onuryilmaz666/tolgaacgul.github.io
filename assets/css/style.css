@@ -61,16 +61,19 @@ body h1,h2,h3,h4,h5,h6,p{
     text-align: center;
 }
 .divBody .leftSide .divImg{
-    height: 70%;
-    width: 70%;
-    border-radius: 50%;
+    width: 60%;
+    border-radius: 35%;
     overflow: hidden;
     position: relative;
     margin: auto;
     margin-bottom: 40px;
+    background-color: #e5d5d5;
+    transform: rotate(45deg);
 }
 .divBody .leftSide .divImg img{
     width: 100%;
+    border-radius: 50%;
+    transform: rotate(-45deg);
 }
 
 /* MIDDLE Side */
