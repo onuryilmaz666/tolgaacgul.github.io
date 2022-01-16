@@ -34,6 +34,15 @@ h3{
 }
 
 
+
+/* Side-Bar Kısmı */
+/* Total İl Oranları */
+.city-total{
+    border-radius: 10px;
+}
+
+
+
 /* Content içi - içerik yani pusula kısmı */
 
 content h3{
@@ -67,6 +76,7 @@ content h3{
 .aday .aday-ad{
     margin: 15px 0px;
     overflow: auto;
+    font-size: small;
 }
 .aday .aday-check{
     margin: 15px auto;
@@ -79,4 +89,8 @@ content h3{
     margin: auto;
     border-top: 1px solid black;
     width: 80%;
+}
+#otherCandidate{
+    width: 100px;
+    height: 39px;
 }
