@@ -18,7 +18,7 @@ h3{
     white-space: nowrap;
     padding: 10px 0px;
 }
-  
+
 .head-cities .city-rate {
     border-right: 1px solid white;
     display: inline-block;
@@ -37,11 +37,35 @@ h3{
 
 /* Side-Bar Kısmı */
 /* Total İl Oranları */
-.city-total{
+#city-total{
     border-radius: 10px;
+    margin: 30px 0px;
 }
 
 
+/* Total aday oyları */
+#candidate-total{
+    border-radius: 10px;
+    margin: 30px 0px;
+    padding: 0px 10px;
+}
+.info-candidate{
+    border: 1px solid black;
+    height: 55px;
+    border-radius: 14px;
+    margin: 10px 0px;
+}
+.info-candidate div{
+    float: left;
+}
+.info-candidate .circle-pic{
+    width: 50px;
+    margin: 0px 15px 0px 5px;
+}
+.info-candidate .circle-pic img{
+    width: 100%;
+    border-radius: 50%;
+}
 
 /* Content içi - içerik yani pusula kısmı */
 
@@ -56,7 +80,7 @@ content h3{
 .pusula{
     padding: 30px 0px;
     overflow: auto;
-    white-space: nowrap;  
+    white-space: nowrap;
 }
 .aday{
     display: inline-block;
@@ -94,3 +118,29 @@ content h3{
     width: 100px;
     height: 39px;
 }
+
+
+/* Mobil Responsive */
+
+@media only screen and (max-width: 300px){
+
+    .aday{
+        width: 115px;
+    }
+    .aday .aday-ad{
+        margin: 15px 0px;
+        overflow: auto;
+        font-size: x-small;
+    }
+    .aday .aday-check{
+        width: 70px;
+        height: 70px;
+    }
+    #otherCandidate{
+        height: 30px;
+    }
+    
+}
+
+
+
