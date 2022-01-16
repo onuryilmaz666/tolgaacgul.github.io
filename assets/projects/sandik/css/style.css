@@ -1,0 +1,82 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+.w-inf{
+    width: 9999px;
+}
+h3{
+    font-family: Silom;
+}
+
+
+/* nav- adaylar */
+/* Üst Nav Bar - scrool */
+.head-cities{
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px 0px;
+}
+  
+.head-cities .city-rate {
+    border-right: 1px solid white;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 3px 5px;
+}
+.head-cities .city-rate:last-child{
+    border-right: none;
+}
+.head-cities.city-rate:hover {
+    background-color: #777;
+}
+
+
+/* Content içi - içerik yani pusula kısmı */
+
+content h3{
+    font-size:xx-large;
+}
+.side-bar h3{
+    font-size: large;
+}
+
+/* Pusula */
+.pusula{
+    padding: 30px 0px;
+    overflow: auto;
+    white-space: nowrap;  
+}
+.aday{
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 20px 0px;
+    width: 150px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.aday .aday-foto{
+    margin: auto;
+    border: 1px solid black;
+    width: 80%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.aday .aday-ad{
+    margin: 15px 0px;
+    overflow: auto;
+}
+.aday .aday-check{
+    margin: 15px auto;
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.aday .yatay-cizgi{
+    margin: auto;
+    border-top: 1px solid black;
+    width: 80%;
+}
