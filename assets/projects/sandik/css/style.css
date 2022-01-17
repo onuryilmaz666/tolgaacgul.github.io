@@ -5,7 +5,7 @@
 .w-inf{
     width: 9999px;
 }
-h3{
+h1,h3{
     font-family: Silom;
 }
 
@@ -46,7 +46,7 @@ h3{
 /* Total aday oyları */
 #candidate-total{
     border-radius: 10px;
-    margin: 30px 0px;
+    margin: 30px 0px 50px 0px;
     padding: 0px 10px;
 }
 .info-candidate{
@@ -68,14 +68,23 @@ h3{
 }
 
 /* Content içi - içerik yani pusula kısmı */
-
-content h3{
+content{
+    overflow:auto;
+    height: auto;
+}
+content h1{
     font-size:xx-large;
 }
 .side-bar h3{
     font-size: large;
 }
-
+.side-bar{
+    height: 100vh;
+    overflow: auto;
+}
+.side-bar::-webkit-scrollbar{
+    border: none
+}
 /* Pusula */
 .pusula{
     padding: 30px 0px;
@@ -132,6 +141,9 @@ content h3{
     }
     #otherCandidate{
         height: 39px;
+    }
+    content h1{
+        font-size:x-large;
     }
 }
 @media only screen and (max-width: 500px){
