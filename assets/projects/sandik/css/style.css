@@ -122,14 +122,23 @@ content h3{
 
 /* Mobil Responsive */
 
-@media only screen and (max-width: 300px){
-
+@media only screen and (max-width: 990px){
+    .aday{
+        width: 130px;
+    }
+    .aday .aday-check{
+        width: 80px;
+        height: 80px;
+    }
+    #otherCandidate{
+        height: 39px;
+    }
+}
+@media only screen and (max-width: 500px){
     .aday{
         width: 115px;
     }
     .aday .aday-ad{
-        margin: 15px 0px;
-        overflow: auto;
         font-size: x-small;
     }
     .aday .aday-check{
@@ -139,7 +148,6 @@ content h3{
     #otherCandidate{
         height: 30px;
     }
-    
 }
 
 
