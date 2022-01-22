@@ -118,6 +118,16 @@ content h1{
     border: 1px solid black;
     border-radius: 50%;
 }
+.aday .aday-check:hover{
+    background-color: rgb(242, 214, 214, 34);
+    cursor: pointer;
+    background-image:url(../img/evet.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color:rgb(48, 40, 40);
+    opacity:0.6; */
+}
 .aday .yatay-cizgi{
     margin: auto;
     border-top: 1px solid black;
@@ -146,7 +156,15 @@ content h1{
         font-size:x-large;
     }
 }
-@media only screen and (max-width: 500px){
+/* Boostrapteki md başlangıcı */
+@media only screen and (max-width: 767px){
+    .side-bar{
+        overflow:visible;
+    }
+}
+
+/* Boostrapteki sm */
+@media only screen and (max-width: 575px){
     .aday{
         width: 115px;
     }
@@ -159,6 +177,9 @@ content h1{
     }
     #otherCandidate{
         height: 30px;
+    }
+    .side-bar{
+        overflow:visible;
     }
 }
 
