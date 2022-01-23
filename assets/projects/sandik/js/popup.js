@@ -17,5 +17,4 @@ function fncPopup_open(id,ad,soyad,img_src){
      // İMAGE Değişikliği
     let img = document.getElementById("id_aday_img");
     img.setAttribute("src", img_src);
-    console.log(img)
 }
