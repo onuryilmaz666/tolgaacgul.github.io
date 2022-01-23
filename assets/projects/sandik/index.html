@@ -452,11 +452,11 @@
                             <img class="w-100" src="img/aday-mansur.jpg" alt="">
                         </div>
                         <div class="aday-ad">
-                            <span>Mansur</span><br>
+                            <span>Mansur </span><br>
                             <span>Yavaş</span>
                         </div>
                         <div class="yatay-cizgi"></div>
-                        <div class="aday-check" onclick="popup()"></div>
+                        <div id="1" class="aday-check" onclick="fncOy1()"></div>
                         <div class="yatay-cizgi"></div>
                     </div>
                     <div class="aday text-center">
@@ -468,7 +468,7 @@
                             <span>İmamoğlu</span>
                         </div>
                         <div class="yatay-cizgi"></div>
-                        <div class="aday-check" onclick="popup()"></div>
+                        <div id="2" class="aday-check" onclick="fncOy2()"></div>
                         <div class="yatay-cizgi"></div>
                     </div>
                     <div class="aday text-center">
@@ -480,7 +480,7 @@
                             <span>Akşener</span>
                         </div>
                         <div class="yatay-cizgi"></div>
-                        <div class="aday-check" onclick="popup()"></div>
+                        <div id="3" class="aday-check" onclick="fncOy3()"></div>
                         <div class="yatay-cizgi"></div>
                     </div>
                     <div class="aday text-center">
@@ -492,7 +492,7 @@
                             <span>Kılıçdaroğlu</span>
                         </div>
                         <div class="yatay-cizgi"></div>
-                        <div class="aday-check" onclick="popup()"></div>
+                        <div id="4" class="aday-check" onclick="fncOy4()"></div>
                         <div class="yatay-cizgi"></div>
                     </div>
                     <div class="aday text-center">
@@ -504,7 +504,7 @@
                             <span>İnce</span>
                         </div>
                         <div class="yatay-cizgi"></div>
-                        <div class="aday-check" onclick="popup()"></div>
+                        <div id="5" class="aday-check" onclick="fncOy5()"></div>
                         <div class="yatay-cizgi"></div>
                     </div>
                     <div class="aday text-center">
@@ -516,7 +516,7 @@
                             <span>Erdoğan</span>
                         </div>
                         <div class="yatay-cizgi"></div>
-                        <div class="aday-check" onclick="popup()"></div>
+                        <div id="6" class="aday-check" onclick="fncOy6()"></div>
                         <div class="yatay-cizgi"></div>
                     </div>
                     <div class="aday text-center">
@@ -528,7 +528,7 @@
                             <span>Bahçeli</span>
                         </div>
                         <div class="yatay-cizgi"></div>
-                        <div class="aday-check" onclick="popup()"></div>
+                        <div id="7" class="aday-check" onclick="fncOy7()"></div>
                         <div class="yatay-cizgi"></div>
                     </div>
                     <div class="aday text-center">
@@ -540,10 +540,10 @@
                             <span>Demirtaş</span>
                         </div>
                         <div class="yatay-cizgi"></div>
-                        <div class="aday-check" onclick="popup()"></div>
+                        <div id="8" class="aday-check" onclick="fncOy8()"></div>
                         <div class="yatay-cizgi"></div>
                     </div>
-                    <div class="aday text-center">
+                    <!-- <div id="9" class="aday text-center">
                         <div class="aday-foto">
                             <img class="w-100" src="img/aday-senin.jpg" alt="">
                         </div>
@@ -553,7 +553,7 @@
                         <div class="yatay-cizgi"></div>
                         <div class="aday-check" onclick="popup()"></div>
                         <div class="yatay-cizgi"></div>
-                    </div>
+                    </div> -->
                 </div>
             </content>
         </div>
@@ -577,9 +577,10 @@
                     <h3 class="text-center col-12">Aday Kontrol</h3>
                     <!-- Adayın Kendisi -->
                     <div class="col-5  text-center">
-                        <div class="aday secilmis text-center">
+                        <div class="secilmis aday text-center">
                             <div class="aday-foto">
-                                <img class="w-100" src="img/tolgaacgul.jpeg" alt="">
+                                <!-- img eklenecek -->
+                                <img id="id_aday_img" class="w-100" src="img/tolgaacgul.jpeg" alt="">
                             </div>
                             <div class="aday-ad">
                                 <span>Tolga</span><br>
@@ -616,13 +617,16 @@
                                   </div>
                             </div>
                             <!-- Gönder Buton -->
-                            <button type="button" class="mt-5 oy-gonder btn btn-success w-100 p-2 btn-lg btn-block">Oyunu Gönder</button>
+                            <div class="form-grup mt-3">
+                                <button type="button" class="btn btn-danger btn-sm" onclick="fncPopup_exit()">İptal</button>
+                                <button type="button" class="btn btn-success btn-sm">Gönder</button>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
 
-            <div id="cancel" class="x-cancel" onclick="cancel()">
+            <div class="x-cancel" onclick="fncPopup_exit()">
                 <img src="img/x.png" alt="">
             </div>
         </div>
@@ -630,23 +634,8 @@
 
 
 
-    <script>
-        function cancel() {
-          var popup = document.getElementById("popup");
-            popup.style.display = "none";
-        }
-        function popup(){
-            let aday_ad = document.querySelector(".aday-ad").value;
-            console.log(aday_ad);
 
-
-
-
-
-            var popup = document.getElementById("popup");
-            popup.style.display = "block";
-        }
-    </script>
+    
 
 
 
@@ -656,8 +645,7 @@
 
 
 
-
-
-
+    <script src="assets/popup.js"></script>
+    <script src="assets/secmen.js"></script>
   </body>
 </html>
