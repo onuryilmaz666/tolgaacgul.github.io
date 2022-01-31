@@ -61,6 +61,15 @@ input.searche::placeholder{
 
 
 /* ----- Side Left ----- */
+/* ? */
+.c-sticky{
+    position: sticky !important;
+    top: 4rem !important;
+    position: -webkit-sticky !important;
+}
+.overflow-hidden{
+    overflow: hidden !important;
+}
 .profile-head-mycode{
     background-image: url(../img/banner.jpg);
     background-size: 100% 100%;
@@ -69,7 +78,7 @@ input.searche::placeholder{
 .profile-head-mycode img{
     height: 70px; 
     border-radius: 50%; 
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     margin: 25px 0px 0px 0px;
 }
 .sider-top{
@@ -206,10 +215,17 @@ input.searche::placeholder{
 }
 .etiketler button{
     border: 0px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
     margin: 5px 0px;
 }
 .etiketler button a{
     text-decoration: none;
     color: #775959;
+}
+.mesaj{
+    width: 300px;
+    height: 50px; 
+    position: -webkit-sticky; 
+    border-radius: 5px; 
+    margin-left: auto; 
 }

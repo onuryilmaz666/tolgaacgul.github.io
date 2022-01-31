@@ -16,20 +16,16 @@
 </head>
 <body>
     <!-- NavBar -->
-    <nav class="fixed-top navbar-mycode navbar navbar-expand-lg navbar-light px-5">
+    <nav class="fixed-top navbar-mycode navbar navbar-expand-lg navbar-light px-5 border-bottom">
         <div class="container mx-5">
           <!-- Logo -->
-          <a class="navbar-brand" href="#"><i class="bi bi-linkedin" style="color:#0a66c2; font-size:30px"></i></a>
-          <!-- ? -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">dasdsad</span>
-          </button>
+          <a class="navbar-brand ms-5" href="#"><i class="bi bi-linkedin" style="color:#0a66c2; font-size:30px"></i></a>
           <!-- Arama -->
           <form class="d-flex">
             <input class="form-control me-2 searche" type="search" placeholder="      Arama" aria-label="Search">
           </form>
           <!-- Menuler -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
             <ul class="ms-auto navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">
@@ -61,8 +57,8 @@
                     <small>Bildirimler</small>
                 </a>
               </li>
-              <li class="border-end nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item dropdown">
+                <a class="nav-link border-end" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="img/ben.jpeg" style="width: 25px; border-radius: 50%;">
                     <small>Ben<i class="bi bi-caret-down-fill"></i></small>
                 </a>
@@ -132,7 +128,9 @@
                           <i class="bi bi-bookmark-fill float-start"></i><span class="float-start ms-1" style="font-size: small;">Öğelerim</span>
                         </div>
                     </div>
-                    <div class="sider-yeni fs-13px py-3">
+                    <!-- En yeni kısmı -->
+                    <!-- ? -->
+                    <div class="sider-yeni c-sticky overflow-hidden fs-13px py-3">
                       <span class="m-3">En yeni</span><br>
                       <button class="w-100 text-start p-1 bos-buton px-3">
                         <i class="bi bi-calendar-day-fill"></i>
@@ -148,7 +146,7 @@
                       <button class="w-100 text-start p-1 bos-buton px-3">
                         <i class="bi bi-hash"></i>                        <span>php</span>
                       </button><br><br>
-
+                      <!-- etkinlik -->
                       <span class="m-3"><a href="#" class="text-decoration-none">Etkinlikler</a></span><br>
                       <button class="w-100 text-start p-1 bos-buton px-3">
                         <i class="bi bi-calendar-day-fill"></i>
@@ -171,19 +169,19 @@
                 </div>
                 <div class="input-option-boxs">
                   <button>
-                    <i class="bi bi-image"></i>
+                    <i class="bi bi-image" style="color: #70B5F9"></i>
                     <span>Fotoğraf</span>
                   </button>
                   <button>
-                    <i class="bi bi-play-btn-fill"></i>  
+                    <i class="bi bi-play-btn-fill" style="color: #7FC15E"></i>  
                     <span>Video</span>
                   </button>
                   <button>
-                    <i class="bi bi-calendar-check-fill"></i>
+                    <i class="bi bi-calendar-check-fill" style="color: #E7A33E"></i>
                     <span>Etkinlik</span>
                   </button>
                   <button>
-                    <i class="bi bi-newspaper"></i>
+                    <i class="bi bi-newspaper" style="color: #F5987E"></i>
                     <span>Yazı Yaz</span>
                   </button>
                 </div>
@@ -380,7 +378,8 @@
                   
                 </div>
                 <!-- Etiketler -->
-                <div class="bg-white my-3 p-3 fs-12px rounded-10">
+                <!-- ? -->
+                <div class="my-3 p-3 fs-12px c-sticky">
                   <div class="etiketler text-center">
                     <button><a href="#">Hakkında</a></button>
                     <button><a href="#">Erişebilirlik</a></button>
@@ -392,6 +391,7 @@
                     <button><a href="#">LinkedIn uygulamasını yükle</a></button>
                     <button><a href="#">Daha Fazla</a></button>
                   </div>
+                  <!-- linkedin logo | corporation -->
                   <div class="text-center mt-3">
                     <span>
                       <img src="img/linkedin-banner.png" style="width: 50px;">
@@ -404,7 +404,16 @@
         </section>
     </section>
 
-
+    <!-- mesajlaşma -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-white position-sticky fixed-bottom border mesaj">
+      <a class="navbar-brand" href="#">
+        <img src="img/ben.jpeg" style="margin-left:10px; width: 30px; height: 30px; border:1px solid black; border-radius: 50%;"/>
+      </a>
+      <span style="font-size: 14px; font-weight: bold; font-family:Arial, Helvetica, sans-serif;"><strong>Mesajlaşma</strong></span>
+      <span class="ms-auto me-3"><i class="bi bi-three-dots"></i></span>
+      <span class="me-3"><i class="bi bi-pencil-square"></i></span>
+      <span class="me-3"><i class="bi bi-chevron-up"></i></span>
+    </nav>
 
 
 
@@ -419,3 +428,5 @@
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+<!-- ? altındaki divler sticky verilemedi | çalışmadı -->
