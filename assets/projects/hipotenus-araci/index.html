@@ -10,10 +10,12 @@
 <body>
   <section class="container">
     <main>
+      <!-- head -->
       <div class="baslik">
         <h1>Gönye Hesabı</h1>
         <p>İnşaat Kalıbı İçin Gönye Programı</p>
       </div>
+      <!-- pisagor -->
       <div class="pisagorAlani">
         <div class="container">
           <div class="a"><p id="pA">a</p></div>
@@ -22,12 +24,13 @@
         </div>
         <div class="b"><p id="pB">b</p></div>
       </div>
+      <!-- input -->
       <div class="girdiAlani">
         <div>Değerleri harflerin konumuna göre girin. Ör: (5.7)</div>
         <div>
-          <input id="inputA" type="text" placeholder="a">
-          <input id="inputB" type="text" placeholder="b">
-          <input id="inputC" type="text" placeholder="c">
+          <input id="inputA" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="a">
+          <input id="inputB" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="b">
+          <input id="inputC" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="c">
         </div>
       </div>
       <button id="idOk">Hesapla</button>
